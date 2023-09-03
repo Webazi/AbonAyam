@@ -547,7 +547,6 @@ body {
     }
 
     .halo2{
-        width: 65vh;
     }
 
     .yess {
@@ -556,6 +555,5 @@ body {
     }
     .yes{
         height: fit-content;
-        width: 65vh;
     }
 }
