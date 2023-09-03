@@ -1,0 +1,552 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    width: 100%;
+}
+
+body {
+    background-color: rgb(195, 195, 195);
+    overflow-x: hidden;
+}
+
+/* containernya */
+
+.container {
+    display: grid;
+    margin: 40px;
+    font-family: 'Black Ops One', cursive;
+}
+
+/* header */
+
+.header {
+    display: grid;
+    grid-template-areas:
+        'main main feature-1'
+        'main main feature-2';
+}
+
+.main {
+    grid-area: main;
+    min-height: 300px;
+    background-image: url(img/abon5.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 50px;
+    border-radius: 9px;
+}
+
+
+.main>* {
+    display: none;
+    color: white;
+}
+
+.features {
+    background-color: rgba(30, 29, 29, 0.402);
+    color: rgb(0, 204, 255);
+    display: grid;
+    place-content: center;
+    text-align: center;
+    font-size: 20px;
+    cursor: pointer;
+    text-shadow: 30px;
+
+}
+
+.feature-1 {
+    grid-area: feature-1;
+    background-image: url(img/abon33.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 45vh;
+
+}
+
+.feature-2 {
+    grid-area: feature-2;
+    background-image: url(img/abon77.jpg);
+
+    background-size: cover;
+    background-position: center;
+    height: 45vh;
+}
+
+.menu {
+    grid-template-columns: 1fr 2fr;
+    display: grid;
+    align-items: center;
+    order: -1;
+
+
+}
+
+.menu ul {
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    display: grid;
+    align-items: center;
+    list-style: none;
+}
+
+.logo4 {
+    justify-content: left;
+    flex-direction: row;
+    align-items: center;
+    display: flex;
+
+}
+
+.menu a {
+    background-color: black;
+    display: block;
+    text-decoration: none;
+    color: aliceblue;
+    padding: 2px;
+    margin: 2px;
+    text-align: center;
+}
+
+.a {
+    color: rgb(255, 255, 255);
+}
+
+.b {
+    color: rgb(2, 154, 255);
+}
+
+.lg {
+    display: none;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.wn1 {
+    color: rgb(255, 255, 255);
+}
+
+.wn2 {
+    color: rgb(2, 154, 255);
+}
+
+/* jadi */
+
+.men-toggle {
+    display: none;
+    flex-direction: column;
+    height: 20px;
+    justify-items: end;
+    justify-content: space-between;
+    gap: 7px;
+    position: relative;
+
+    margin: 10px;
+    z-index: 12;
+}
+
+.men-toggle span {
+    display: block;
+    width: 20px;
+    height: 3px;
+    background-color: rgb(252, 5, 5);
+    border-radius: 3px;
+    transition: all 0.5s;
+}
+
+.men-toggle input {
+    position: absolute;
+    width: 50px;
+    opacity: 0;
+    height: 38px;
+    left: -15px;
+    top: -10px;
+    cursor: pointer;
+    z-index: 7;
+}
+
+.men-toggle span:nth-child(2) {
+    transform-origin: 0 0;
+}
+
+.men-toggle span:nth-child(4) {
+    transform-origin: 0 100%;
+}
+
+.men-toggle input:checked~span:nth-child(2) {
+    transform: rotate(45deg) translate(2px, 2px);
+}
+
+.men-toggle input:checked~span:nth-child(3) {
+    opacity: 0;
+    transform: scale(0);
+}
+
+.men-toggle input:checked~span:nth-child(4) {
+    transform: rotate(-45deg) translate(0, -1px);
+}
+
+/* produk dan penjelasan*/
+
+.abah {
+    display: grid;
+
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.bg {
+    background-image: url(https://i.pinimg.com/originals/fc/07/4f/fc074fa6d5aa4ca06a930659c9dcde85.jpg);
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.69);
+    background-position: center;
+    width: fit-content;
+    height: 100vh;
+    background-repeat: no-repeat;
+}
+
+.warp {
+    display: grid;
+    grid-template-areas:
+        'produks1 penjelasan';
+    margin: px;
+    background-color: rgba(0, 0, 0, 0.485);
+    align-items: center;
+    height: 100vh;
+}
+
+.produks1 {
+    grid-area: produks1;
+    background-image: url(img/abon0.jpg);
+    display: grid;
+    background-size: contain;
+    min-height: 300px;
+    width: 400px;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: white;
+    border-image-outset: 20px;
+    margin: 20px;
+
+
+}
+
+.produks1 h1 {
+    font-family: 'Black Ops One', cursive;
+}
+
+.penjelasan {
+    grid-area: penjelasan;
+    display: grid;
+    place-content: center;
+    text-align: left;
+    border-radius: 20px;
+    color: aliceblue;
+    gap: 20px;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 30px;
+}
+
+.btn {
+    place-content: center;
+    color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin: 2px;
+    padding: 8px;
+    width: 100px;
+    background-color: red;
+
+}
+
+.halo2 {
+    background-image: url(https://cdn.wallpapersafari.com/1/78/kt0qwH.jpg);
+    background-size: cover;
+    height: 100vh;
+    display: grid;
+
+}
+
+.halo3 {
+    display: grid;
+    background-color: #00000065;
+    place-content: center;
+    grid-template-areas:
+        'penjelasan2 produks2'
+        'penjelasan3 produks3';
+}
+
+.produks2 {
+    grid-area: produks2;
+    background-image: url(img/abon6.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    margin: 10px;
+    min-height: 300px;
+    width: 400px;
+}
+
+.produks3 {
+    grid-area: produks3;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url(img/abon37.jpg);
+    margin: 10px;
+    min-height: 230px;
+    width: 400px;
+
+}
+
+.penjelasan2 {
+    grid-area: penjelasan2;
+    display: grid;
+    place-content: center;
+    text-align: right;
+    border-radius: 20px;
+    color: aliceblue;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 25px;
+}
+
+
+.penjelasan3 {
+    grid-area: penjelasan3;
+    display: grid;
+    place-content: center;
+    text-align: right;
+    border-radius: 20px;
+    color: aliceblue;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 25px;
+
+}
+
+.yes{
+    background-color: white;
+    height: 100vh;
+    place-content: center;
+    
+ 
+}
+
+.judulke3 h2{
+    text-align: center;
+    place-content: center;
+    justify-content: center;
+    padding: 30px;
+}
+
+.yess{
+    display: flex;
+    flex-direction: row;
+    place-content: center;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    
+}
+
+.yess li, a{
+    text-decoration: none;
+    list-style: none;
+}
+
+.kontent{
+    margin: 20px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 20px;
+    box-shadow: 2px 2px 7px black;
+    padding: 30px;
+    display: block;
+    cursor: pointer;
+}
+
+.kontent h1{
+    font-size: 20px;
+    color: black;
+}
+
+.kontent p{
+    font-size: 30px;
+    color: black;
+}
+
+.isi1, .isi2, .isi3, .isi4{
+    background-image: url(img/abon0.jpg);
+    background-size: cover;
+    min-height: 200px;
+    width: 400;
+    background-repeat: no-repeat
+    ;
+}
+
+@media (max-width:710px) {
+    .menu {
+        order: -1;
+        grid-template-columns: 1fr;
+
+    }
+
+    .logo4 {
+        font-size: 10px;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media(max-width:600px) {
+    .menu {
+        order: -1;
+        display: flex;
+
+        grid-template-columns: 1fr;
+    }
+
+    .menu ul {
+        position: fixed;
+        left: 0;
+        display: flex;
+        top: 0;
+        width: 50%;
+        height: 100%;
+        justify-content: space-evenly;
+        align-items: center;
+        background-color: rgb(251, 246, 246);
+        z-index: 2;
+        color: wheat;
+        flex-direction: column;
+        transform: translatex(-100%);
+        transition: all 1s;
+
+
+    }
+
+    .menu a {
+        background-color: none;
+        margin: 20px;
+    }
+
+    nav ul.slide {
+        transform: rotateY(0);
+        opacity: 1;
+
+    }
+
+    .header {
+        grid-template-areas:
+            'main'
+            'feature-1'
+            'feature-2';
+        gap: 5px;
+
+    }
+
+    .main {
+        gap: 10px;
+    }
+
+    .feature-1 {
+        min-height: 150px;
+    }
+
+    .feature-2 {
+        min-height: 150px;
+    }
+
+    .logo4 {
+        display: none;
+
+    }
+
+    .lg {
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        text-align: center;
+    }
+
+    .men-toggle {
+        display: flex;
+        order: 1;
+        margin-top: -30px;
+        position: fixed;
+        justify-items: end;
+    }
+
+    /* produk di android */
+    .bg {
+        background-size: cover;
+    }
+
+    .warp {
+        display: grid;
+        grid-template-areas:
+            'produks1'
+            'penjelasan'
+            'btn-1';
+
+    }
+
+    .produks1>* {
+        display: grid;
+        place-content: center;
+        color: white;
+    }
+
+    .penjelasan {
+        grid-area: penjelasan;
+        display: grid;
+        text-align: center;
+        place-content: center;
+        font-size: 20px;
+    }
+
+    .btn {
+        place-content: center;
+        text-align: center;
+        align-items: center;
+        margin-left: 170px;
+    }
+
+    .halo3{
+        grid-template-areas: 
+        'produks2'
+        'penjelasan2'
+        'produks3'
+        'penjelasan3';
+        
+    }
+
+    .penjelasan2{
+        text-align: center;
+        margin: 20px;
+        font-size: 20px;
+    }
+    .penjelasan3{
+        text-align: center;
+        margin: 20px;
+        font-size: 20px;
+    }
+
+    .halo2{
+        height: fit-content;
+    }
+
+    .yess {
+        flex-direction: column;
+        
+    }
+    .yes{
+        height: fit-content;
+    }
+}
