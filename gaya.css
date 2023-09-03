@@ -456,6 +456,7 @@ body {
     .main {
         gap: 10px;
     }
+.main > * {display:none;}
 
     .feature-1 {
         min-height: 150px;
