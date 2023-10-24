@@ -556,4 +556,14 @@ body {
     .yes{
         height: fit-content;
     }
+    .penjelasan2 {
+        margin: 20px;
+        padding: 20px;
+       
+    }
+
+    .penjelasan3{
+        margin: 20px;
+        padding: 20px;
+    }
 }
