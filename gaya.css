@@ -226,13 +226,14 @@ body {
     background-image: url(img/abon0.jpg);
     display: grid;
     background-size: contain;
-    min-height: 300px;
-    width: 400px;
     background-repeat: no-repeat;
     background-position: center;
-    color: white;
-    border-image-outset: 20px;
-    margin: 20px;
+    margin: 10px;
+    min-height: 300px;
+    width: 400px;
+
+
+}
 
 
 }
