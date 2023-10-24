@@ -204,18 +204,16 @@ body {
 .bg {
     background-image: url(https://i.pinimg.com/originals/fc/07/4f/fc074fa6d5aa4ca06a930659c9dcde85.jpg);
     background-size: cover;
-    background-color: rgba(0, 0, 0, 0.69);
+    height: 100%;
+    background-repeat: no-repeat;
     background-position: center;
 
-    height: 100vh;
-    background-repeat: no-repeat;
 }
 
 .warp {
     display: grid;
     grid-template-areas:
         'produks1 penjelasan';
-    margin: px;
     background-color: rgba(0, 0, 0, 0.485);
     align-items: center;
     height: 100vh;
@@ -560,6 +558,11 @@ body {
     }
 
     .penjelasan3{
+        margin: 20px;
+        padding: 20px;
+    }
+
+    .penjelasan{
         margin: 20px;
         padding: 20px;
     }
