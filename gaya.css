@@ -9,7 +9,7 @@ img {
 
 body {
     background-color: rgb(195, 195, 195);
-    overflow-x: hidden;
+    overflow: hidden;
 }
 
 /* containernya */
